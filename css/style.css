@@ -1,0 +1,108 @@
+body { 
+    background: #f0f2f5; 
+}
+
+.wrapper { 
+    max-width: 1024px; 
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+
+    width: 100%;
+    margin: 48px auto; 
+
+    background: red; 
+}
+
+.pokemon-container{
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+
+    margin-top: 24px;
+}
+
+.card{
+    height: 300px;
+    width: 250px;
+    background: #e5e5e5;
+    background-image: url("../assets/MicrosoftTeams-image.png");
+    background-size:100%;
+    background-position:50px -30px;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    text-align: center;
+
+    cursor: pointer;
+    
+}
+
+.card .sprite{
+    width: 100%;
+    image-rendering: pixelated;
+}
+
+.card .name{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+
+.pagination{
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+
+    column-gap: 8px;
+}
+
+.pagination button{
+    padding: 12px 16px;
+    background: #639;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.pagination button:hover{
+    background: #4e2479;
+}
+
+.page-index{
+    text-align: center;
+    width: 28px;
+    font-size: 20px;
+}
+
+@keyframes spinner{
+0%{
+   rotate:0deg;
+}
+
+100%{
+   rotate:360deg;
+}
+}
+
+.spinner{
+    height: 28px;
+    width:28px;
+    border-radius: 50%;
+    border:3px solid #663399;
+    border-bottom-color: transparent;
+    animation:spinner 1s linear infinite;
+}
+
+.hidden{
+    display: none;
+}
+
+footer{
+    margin-top:32px;
+    opacity:0.7;
+    font-size:14px;
+}
